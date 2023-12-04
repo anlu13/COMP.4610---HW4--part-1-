@@ -1,0 +1,89 @@
+/* the body */
+#body {
+    background-color: white;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin: 0;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+/* the main div of everything */
+#main_div {
+    background-color: white;
+    margin-top: 50px;
+}
+
+/* the title box at the top */
+#header {
+    text-align: center;
+    border-bottom-style: solid;
+}
+
+/* the "form" (ie all the boxes + related text) */
+form {
+    color: black;
+}
+
+/* the individual input boxes of the form */
+input {
+    background-color: white;
+}
+
+/* the "Enter" button of the form */
+button {
+    background-color: white;
+}
+
+/* for the error message */
+.error {
+    color: red;
+}
+
+/* the entire table */
+#col_table {
+    overflow-y: scroll;
+    overflow-x: scroll;
+    height: 300px;
+}
+
+/* the table itself */
+table {
+    margin: 50px auto;
+    color: black;
+    width: 100%;
+}
+
+/* the top row */
+thead>tr>th:not(th:nth-child(1)) {
+    background-color: gray;
+    padding: 3px;
+    text-align: center;
+    border: solid black;
+
+    /* Top row is fixed */
+    position: sticky;
+    top: 0; 
+}
+
+/* the left column */
+tbody>tr>th {
+    background-color: gray;
+    padding: 3px;
+    text-align: center;
+    border: solid black;
+
+    /* Left column is fixed */
+    position: sticky;
+    left: 0;
+}
+
+/* the lines inside the table's body */
+tbody>tr>td {
+    border: solid black;
+}
+
+/* the even rows (2nd, 4th, 6th, etc.) */
+tr:nth-child(even) {
+    background-color: white;
+}
